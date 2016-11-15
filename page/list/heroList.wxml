@@ -1,0 +1,17 @@
+<view class="heroListContainer">
+    <view class="heroOption">
+        <block wx:for="{{tipsList}}" >
+            <botton class="heroOption-btn left">{{item}}</botton>
+        </block>
+        
+    </view>
+    <view class="heroListBox">
+        <view class="heroList">
+            <view wx:for="{{heroList}}" class="heroListCon">
+                <image src="{{item.src}}" class="slide-image" width="330" height="150"/>
+                <text>{{item.name}}</text>
+            </view>
+        </view>
+    </view>
+    
+</view>
