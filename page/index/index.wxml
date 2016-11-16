@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view>
-  <swiper indicator-dots="{{indicatorDots}}"
+  <swiper class="swiper" indicator-dots="{{indicatorDots}}"
     autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{imgUrls}}">
         <swiper-item class="swiper-img">
@@ -15,19 +15,20 @@
     <text>头条新闻</text>
 </view>
 <view class="news-item-container">
-    <view wx:for="{{newList}}" class="newBox">
-        <view class="newLeft left">
-            <view class="newsTop-tit">
-                <text class="news-tit-title">{{item.title}}</text>
-            </view>  
-             <view class="newsTop-con">
-                <text class="news-tit-info">{{item.info}}</text>
-            </view>       
-        </view>
+    <navigator url="/page/newsDetail/newsDetail" wx:for="{{newList}}" class="newBox" bindtap="tipsShow">
         <view class="newRight left">
             <view>
                 <image src="{{item.src}}"></image>
             </view> 
         </view>
-    </view>
+        <view class="newLeft left">
+            <view class="newsTop-tit">
+                <text class="news-tit-title">{{item.title}}</text>
+            </view>  
+            <view class="newsTop-con">
+                <text class="news-tit-info">{{item.info}}</text>
+            </view>       
+        </view>
+        
+    </navigator >
 </view>

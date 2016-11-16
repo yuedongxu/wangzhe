@@ -21,12 +21,21 @@
 .heroListBox{
     width:100%;
     border-top:1px solid #ccc;
+    background-color: #ffffff;
+    clear:both;
 }
 .heroList{
     margin-top:20px;
+    min-height:600px;
 }
 .heroList .heroListCon{
-    height:200px;
+    width:49%;
+    height:180px;
+ }
+.heroList .heroListConName{
+    width:80%;
+    text-align:center;
+    margin-left:10%;
 }
 .heroList image{
     width:80%;
@@ -34,7 +43,6 @@
     margin-left:10%;
 }
 .heroList text{
-    display:block;
     width:200px;
-    margin-left:40%;
+    display:block;
 }

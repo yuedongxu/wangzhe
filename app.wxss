@@ -20,3 +20,6 @@ page {
 .right{
   float:right;
 }
+.swiper{
+  height:180px!important;
+}

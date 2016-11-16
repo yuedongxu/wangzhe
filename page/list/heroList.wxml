@@ -7,10 +7,15 @@
     </view>
     <view class="heroListBox">
         <view class="heroList">
-            <view wx:for="{{heroList}}" class="heroListCon">
+            <navigator url="/page/heroDetail/heroDetail" wx:for="{{heroList}}" class="heroListCon left"
+            >
+                
                 <image src="{{item.src}}" class="slide-image" width="330" height="150"/>
-                <text>{{item.name}}</text>
-            </view>
+                <view class="heroListConName">
+                    {{item.name}}
+                </view>
+            </navigator>
+            
         </view>
     </view>
     

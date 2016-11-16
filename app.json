@@ -1,7 +1,9 @@
 {
   "pages": [
     "page/index/index",
-    "page/list/heroList"
+    "page/list/heroList",
+    "page/newsDetail/newsDetail",
+    "page/heroDetail/heroDetail"
   ],
   "window": {
     "navigationBarTextStyle": "#ffffff",
